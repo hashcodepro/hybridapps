@@ -11,9 +11,15 @@
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <title>Y APP 1</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
 </head>
 <body>
-<div data-role="header" data-position="fixed" id="header">
+<div data-role="header" id="header" data-position="fixed">
     Testing Fundamentals
 </div>
         <div data-role="main" class="ui-content">
