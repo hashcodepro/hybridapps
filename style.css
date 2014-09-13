@@ -19,6 +19,10 @@
     font-size:x-large;
 }
 
+ol{
+    list-style:disc;
+}
+
 ul{
     list-style: none;
     padding:0;
