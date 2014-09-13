@@ -3,8 +3,14 @@
     width:100%;
     overflow: auto;
 }
-
-#header,#footer{
+#title{
+    padding-left:15px;
+    color:#22313F;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 700;
+}
+#header{
     background-color:#34495E;
     color:white;
     padding-top:5px;

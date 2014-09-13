@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Software Quality</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+        <header id="title">
+            <h2>Software Quality</h2>
+        </header>
+
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>Software quality is the degree of conformance to explicit or implicit requirements and expectations.</p>
+            </article>
+        </section>
+        <section>
+            <u><b>Explanation</b></u>
+            <article>
+                <b>Explicit:</b> clearly defined and documented<br>
+                <b>Implicit:</b> not clearly defined and documented but indirectly suggested<br>
+                <b>Requirements:</b> business/product/software requirements<br>
+                <b>Expectations:</b> mainly end-user expectations
+            </article>
+        </section>
+        <section>
+            <h3>Definition by ISTQB</h3>
+            <article>
+                <p><b>Quality:</b> The degree to which a component, system or process meets specified requirements and/or user/customer needs and expectations.</p>
+
+                <p><b>Software Quality:</b> The totality of functionality and features of a software product that bear on its ability to satisfy stated or implied needs</p>
+            </article>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>
