@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Software Quality</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Verification and Validation</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            Verification and Validation: Definition, Differences, Details:
+            <article>
+                <p>
+                    The terms ‘Verification‘ and ‘Validation‘ are frequently used in the software testing world but the meaning of those terms are mostly vague and debatable. You will encounter (or have encountered) all kinds of usage and interpretations of those terms, and it is our humble attempt here to distinguish between them as clearly as possible.
+                </p>
+                <table style="overflow: auto;">
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Verification</th>
+                        <th>Validation</th>
+                    </tr>
+                    <tr>
+                        <td>Definition</td>
+                        <td><p>The process of evaluating work-products (not the actual final product) of a development phase to determine whether they meet the specified requirements for that phase.</p></td>
+                        <td><p>The process of evaluating software during or at the end of the development process to determine whether it satisfies specified business requirements.</p></td>
+                    </tr>
+                    <tr>
+                        <td>Objective</td>
+                        <td><p>To ensure that the product is being built according to the requirements and design specifications. In other words, to ensure that work products meet their specified requirements.</p></td>
+                        <td><p>To ensure that the product actually meets the user’s needs, and that the specifications were correct in the first place. In other words, to demonstrate that the product fulfills its intended use when placed in its intended environment.</p></td>
+                    </tr>
+                    <tr>
+                        <td>Question</td>
+                        <td>Are we building the product right?</td>
+                        <td>Are we building the right product?</td>
+                    </tr>
+                    <tr>
+                        <td>Evaluation Items</td>
+                        <td>Plans, Requirement Specs, Design Specs, Code, Test Cases</td>
+                        <td>The actual product/software.</td>
+                    </tr>
+                    <tr>
+                        <td>Activities</td>
+                        <td>
+                            <ol>
+                                <li>Reviews
+                                <li>Walkthroughs
+                                <li>Inspections
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Testing</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+                <p>It is entirely possible that a product passes when verified but fails when validated. This can happen when, say, a product is built as per the specifications but the specifications themselves fail to address the user’s needs.</p>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>
