@@ -48,4 +48,6 @@ a:hover{
     text-decoration: none;
     color:white;
 }
-
+td{
+    vertical-align: text-top;
+}
