@@ -51,3 +51,9 @@ a:hover{
 td{
     vertical-align: text-top;
 }
+
+#sdlc{
+    height:200px;
+    width:200px;
+    border-radius:5px;
+}
