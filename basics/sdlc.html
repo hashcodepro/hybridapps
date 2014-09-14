@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="style.css"/>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../lightbox/js/lightbox.min.js"></script>
-    <link rel="stylesheet" href="../lightbox/css/lightbox.css"/>
     <title>Testing Fundamentals</title>
     <script>
         $(document).bind("mobileinit", function() {
@@ -50,9 +48,9 @@
         </section>
         <section>
             <a href="#popupsdlc" data-rel="popup" data-transition-to="window" data-transition="fade"><img src="../images/sdlc.jpg" style="height:200px; width:200px; border-radius:10px;" alt=""/></a>
-            <div data-role="popup" id="popupsdlc" data-overlay-theme="a" data-theme="d" data-corners="false">
+            <div style="height:300px; width:300px; overflow: auto;" data-role="popup" id="popupsdlc" data-overlay-theme="a" data-theme="d" data-corners="false">
                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                <img src="../images/sdlc.jpg" alt=""/>
+                <img src="../images/sdlc.jpg" style=" height:500px;" alt=""/>
             </div>
         </section>
     </div>
