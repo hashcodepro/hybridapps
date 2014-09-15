@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+
+        $( document ).on( "pagecreate", function() {
+            $( ".photopopup" ).on({
+                popupbeforeposition: function() {
+                    var maxHeight = $(window).height() - 160 + "px";
+                    $(".photopopup img").css("max-height", maxHeight);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<a href="#popupsdlc1" data-rel="popup" data-position-to="window" data-transition="fade"><img src="../images/sdlc.jpg" style="height:200px; width:200px; border-radius:10px;" alt=""/></a>
+<div data-role="popup" style="" class="photopopup" id="popupsdlc1" data-overlay-theme="a" data-theme="d" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    <img src="../images/sdlc.jpg" alt=""/>
+</div>
+
+<a href="#popupsdlc2" data-rel="popup" data-position-to="window" data-transition="fade"><img src="../images/Software_Testing_Life_Cycle.png" style="width:200px; border-radius:10px;" alt=""/></a>
+<div data-role="popup" style="" class="photopopup" id="popupsdlc2" data-overlay-theme="a" data-theme="d" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    <img src="../images/Software_Testing_Life_Cycle.png"  alt=""/>
+</div>
+
+<a href="#popupsdlc3" data-rel="popup" data-position-to="window" data-transition="fade"><img src="../images/Testing-align-SDLC-and-STLC.JPG" style="width:200px; border-radius:10px;" alt=""/></a>
+<div data-role="popup" id="popupPhotoPortrait" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    <img src="../images/Testing-align-SDLC-and-STLC.JPG" alt="Photo portrait">
+</div>
+</body>
+</html>

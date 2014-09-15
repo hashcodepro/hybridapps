@@ -16,6 +16,15 @@
             $.support.touchOverflow = true;
             $.mobile.touchOverflowEnabled = true;
         });
+
+        $( document ).on( "pagecreate", function() {
+            $( ".photopopup" ).on({
+                popupbeforeposition: function() {
+                    var maxHeight = $(window).height() - 160 + "px";
+                    $(".photopopup img").css("max-height", maxHeight);
+                }
+            });
+        });
     </script>
 </head>
 <body>
@@ -27,7 +36,27 @@
         <h2>STLC</h2>
     </header>
     <div data-role="content">
+        <section>
+            <h3>What is STLC ?</h3>
+            <article>
+                <p>
+                    Software Testing Life Cycle
+                    Basics
+                    inShare24
 
+                    Software Testing Life Cycle (STLC) defines the steps/stages/phases in testing of software. However, there is no fixed standard of STLC in the world and it basically varies as per the following:</p>
+                    <ol>
+                        <li>Software Development Life Cycle</li>
+                        <li>Whims of the Management</li>
+                    </ol>
+                <p>Nevertheless, Software Testing Life Cycle, in general, comprises of the following phases:</p>
+                <a href="#popupsdlc2" data-rel="popup" data-position-to="window" data-transition="fade"><img src="../images/Software_Testing_Life_Cycle.png" style="width:200px; border-radius:10px;" alt=""/></a>
+                <div data-role="popup" style="" class="photopopup" id="popupsdlc2" data-overlay-theme="a" data-theme="d" data-corners="false" data-tolerance="30,15">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <img src="../images/Software_Testing_Life_Cycle.png"  alt=""/>
+                </div>
+            </article>
+        </section>
     </div>
 </div>
 </body>

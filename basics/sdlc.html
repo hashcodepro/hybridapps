@@ -16,7 +16,17 @@
             $.support.touchOverflow = true;
             $.mobile.touchOverflowEnabled = true;
         });
+
+        $( document ).on( "pagecreate", function() {
+            $( ".photopopup" ).on({
+                popupbeforeposition: function() {
+                    var maxHeight = $(window).height() - 160 + "px";
+                    $(".photopopup img").css("max-height", maxHeight);
+                }
+            });
+        });
     </script>
+
 </head>
 <body>
 <div data-role="page" id="page">
@@ -47,10 +57,10 @@
             </article>
         </section>
         <section>
-            <a href="#popupsdlc" data-rel="popup" data-transition-to="window" data-transition="fade"><img src="../images/sdlc.jpg" style="height:200px; width:200px; border-radius:10px;" alt=""/></a>
-            <div style="width:100%" data-role="popup" id="popupsdlc" data-overlay-theme="a" data-theme="d" data-corners="false">
+            <a href="#popupsdlc1" data-rel="popup" data-position-to="window" data-transition="fade"><img src="../images/sdlc.jpg" style="height:200px; width:200px; border-radius:10px;" alt=""/></a>
+            <div data-role="popup" style="" class="photopopup" id="popupsdlc1" data-overlay-theme="a" data-theme="d" data-corners="false" data-tolerance="30,15">
                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                <img src="../images/sdlc.jpg" style=" width:100%;" alt=""/>
+                <img src="../images/sdlc.jpg" alt=""/>
             </div>
         </section>
     </div>
