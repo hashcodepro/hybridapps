@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Integration Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                   <p>Integration Testing is a level of the software testing process where individual units are combined and tested as a group.</p>
+            </article>
+        </section>
+        <br/>
+        <img src="../images/integrationtesting.jpg" class="sdimg" alt=""/>
+        <section><br/>
+            <aritcle>
+                <p>The purpose of this level of testing is to expose faults in the interaction between integrated units.</p>
+                <p>Test drivers and test stubs are used to assist in Integration Testing.</p>
+                <p><b>Note</b>: The definition of a unit is debatable and it could mean any of the following:</p>
+                <ol>
+
+                    <li>the smallest testable part of a software
+                    <li>a ‘module’ which could consist of many of  ‘1’
+                    <li>a ‘component’ which could consist of many of ‘2’
+
+                </ol>
+
+            </aritcle>
+                    <h3>Analogy</h3>
+                    <article>
+                        <p>During the process of manufacturing a ballpoint pen, the cap, the body, the tail and clip, the ink cartridge and the ballpoint are produced separately and unit tested separately. When two or more units are ready, they are assembled and Integration Testing is performed. For example, whether the cap fits into the body or not.</p>
+                    </article>
+
+                    <h3>Method</h3>
+                    <article>
+                        Any of Black Box Testing, White Box Testing, and Gray Box Testing methods can be used. Normally, the method depends on your definition of ‘unit’.
+                    </article>
+
+                    <h3>Tasks</h3>
+                    <article>
+                        <ol>
+
+                            <li>Integration Test Plan
+                                <ol>
+                                    <li>Prepare
+                                    <li>Review
+                                    <li>Rework
+                                    <li>Baseline
+                                </ol>
+                            </li>
+                            <li>Integration Test Cases/Scripts
+                            <ol>
+                            <li>Prepare
+                                <li>Review
+                                <li>Rework
+                                <li>Baseline
+                            </ol>
+                            </li>
+                            <li>Integration Test
+                                <ol>
+                                <li>Perform
+                                </ol>
+                            </li>
+
+                        </ol>
+                    </article>
+            <h3>When is Integration Testing performed?</h3>
+            <article>
+                <p>
+                    Integration Testing is performed after Unit Testing and before System Testing.
+                </p>
+            </article>
+            <h3>
+                Who performs Integration Testing?
+            </h3>
+            <article>
+                <p>
+                    Either Developers themselves or independent Testers perform Integration Testing.
+                </p>
+            </article>
+            <h3>
+                Approaches
+            </h3>
+            <article>
+                <ol>
+
+                    <li>Big Bang is an approach to Integration Testing where all or most of the units are combined together and tested at one go. This approach is taken when the testing team receives the entire software in a bundle. So what is the difference between Big Bang Integration Testing and System Testing? Well, the former tests only the interactions between the units while the latter tests the entire system.
+                    <li>Top Down is an approach to Integration Testing where top level units are tested first and lower level units are tested step by step after that. This approach is taken when top down development approach is followed. Test Stubs are needed to simulate lower level units which may not be available during the initial phases.
+                    <li>Bottom Up is an approach to Integration Testing where bottom level units are tested first and upper level units step by step after that. This approach is taken when bottom up development approach is followed. Test Drivers are needed to simulate higher level units which may not be available during the initial phases.
+                    <li>Sandwich/Hybrid is an approach to Integration Testing which is a combination of Top Down and Bottom Up approaches.
+
+                </ol>
+            </article>
+            <h3>Tips</h3>
+            <article>
+                <ol>
+
+                    <li>Ensure that you have a proper Detail Design document where interactions between each unit are clearly defined. In fact, you will not be able to perform Integration Testing without this information.
+                    <li>Ensure that you have a robust Software Configuration Management system in place. Or else, you will have a tough time tracking the right version of each unit, especially if the number of units to be integrated is huge.
+                    <li>Make sure that each unit is first unit tested before you start Integration Testing.
+                    <li>As far as possible, automate your tests, especially when you use the Top Down or Bottom Up approach, since regression testing is important each time you integrate a unit, and manual regression testing can be inefficient.
+
+                </ol>
+            </article>
+            <h3>Definition by ISTQB</h3>
+            <article>
+                <ol>
+
+                    <li>integration testing: Testing performed to expose defects in the interfaces and in the
+                    interactions between integrated components or systems.
+                    <li>component integration testing: Testing performed to expose defects in the interfaces and
+                    interaction between integrated components.
+                    <li>system integration testing: Testing the integration of systems and packages; testing
+                    interfaces to external organizations (e.g. Electronic Data Interchange, Internet).
+
+                </ol>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

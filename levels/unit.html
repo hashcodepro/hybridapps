@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Unit Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>
+                Definition
+            </h3>
+            <article>
+                <b>Unit Testing</b> is a level of the software testing process where individual units/components of a software/system are tested. The purpose is to validate that each unit of the software performs as designed.
+            </article>
+        </section>
+        <br/>
+        <img src="../images/unittesting.jpg" class="sdimg" alt=""/>
+
+        <section><br/>
+            <article>
+                <p>A unit is the smallest testable part of software. It usually has one or a few inputs and usually a single output. In procedural programming a unit may be an individual program, function, procedure, etc. In object-oriented programming, the smallest unit is a method, which may belong to a base/super class, abstract class or derived/child class. (Some treat a module of an application as a unit. This is to be discouraged as there will probably be many individual units within that module.)</p>
+                <p>Unit testing frameworks, drivers, stubs and mock or fake objects are used to assist in unit testing.</p>
+            </article>
+
+            <h3>Method</h3>
+            <article>
+                Unit Testing is performed by using the White Box Testing method.
+            </article>
+            <h3>When is it performed?</h3>
+            <article>
+                Unit Testing is the first level of testing and is performed prior to Integration Testing.
+            </article>
+            <h3>
+                Who performs it?
+            </h3>
+            <article>
+                Unit Testing is normally performed by software developers themselves or their peers. In rare cases it may also be performed by independent software testers.
+            </article>
+            <h3>Tasks</h3>
+        <article>
+            <ol>
+
+                <li>Unit Test Plan
+                <li>Prepare
+                <li>Review
+                <li>Rework
+                <li>Baseline
+                <li>Unit Test Cases/Scripts
+                <li>Prepare
+                <li>Review
+                <li>Rework
+                <li>Baseline
+                <li>Unit Test
+                <li>Perform
+
+            </ol>
+        </article>
+            <h3>Benefits</h3>
+            <article>
+                <ol>
+
+                    <li>Unit testing increases confidence in changing/maintaining code. If good unit tests are written and if they are run every time any code is changed, the likelihood of any defects due to the change being promptly caught is very high. If unit testing is not in place, the most one can do is hope for the best and wait till the test results at higher levels of testing are out. Also, if codes are already made less interdependent to make unit testing possible, the unintended impact of changes to any code is less.
+                    <li>Codes are more reusable. In order to make unit testing possible, codes need to be modular. This means that codes are easier to reuse.
+                    <li>Development is faster. How? If you do not have unit testing in place, you write your code and perform that fuzzy ‘developer test’ (You set some breakpoints, fire up the GUI, provide a few inputs that hopefully hit your code and hope that you are all set.) In case you have unit testing in place, you write the test, code and run the tests. Writing tests takes time but the time is compensated by the time it takes to run the tests. The test runs take very less time: You need not fire up the GUI and provide all those inputs. And, of course, unit tests are more reliable than ‘developer tests’. Development is faster in the long run too. How? The effort required to find and fix defects found during unit testing is peanuts in comparison to those found during system testing or acceptance testing.
+                    <li>The cost of fixing a defect detected during unit testing is lesser in comparison to that of defects detected at higher levels. Compare the cost (time, effort, destruction, humiliation) of a defect detected during acceptance testing or say when the software is live.
+                    <li>Debugging is easy. When a test fails, only the latest changes need to be debugged. With testing at higher levels, changes made over the span of several days/weeks/months need to be debugged.
+                    <li>Codes are more reliable. Why? I think there is no need to explain this to a sane person.
+
+                </ol>
+            </article>
+            <h3>
+                Tips
+            </h3>
+            <article>
+                <ol>
+
+                    <li>Find a tool/framework for your language.
+                    <li>Do not create test cases for everything: some will be handled by themselves. Instead, focus on the tests that impact the behavior of the system.
+                    <li>Isolate the development environment from the test environment.
+                    <li>Use test data that is close to that of production.
+                    <li>Before fixing a defect, write a test that exposes the defect. Why? First, you will later be able to catch the defect if you do not fix it properly. Second, your test suite is now more comprehensive. Third, you will most probably be too lazy to write the test after you have already fixed the defect.
+                    <li>Write test cases that are independent of each other. For example if a class depends on a database, do not write a case that interacts with the database to test the class. Instead, create an abstract interface around that database connection and implement that interface with mock object.
+                    <li>Aim at covering all paths through the unit. Pay particular attention to loop conditions.
+                    <li>Make sure you are using a version control system to keep track of your code as well as your test cases.
+                    <li>In addition to writing cases to verify the behavior, write cases to ensure performance of the code.
+                    <li>Perform unit tests continuously and frequently.
+
+                </ol>
+            </article>
+            <h3>
+                One More Reason
+            </h3>
+            <article>
+                <p>Lets say you have a program comprising of two units. The only test you perform is system testing. [You skip unit and integration testing.] During testing, you find a bug. Now, how will you determine the cause of the problem?</p>
+                <ol>
+                    <li>Is the bug due to an error in unit 1?
+                    <li>Is the bug due to an error in unit 2?
+                    <li>Is the bug due to errors in both units?
+                    <li>Is the bug due to an error in the interface between the units?
+                    <li>Is the bug due to an error in the test or test case?
+
+                </ol>
+                <p>Unit testing is often neglected but it is, in fact, the most important level of testing.</p>
+            </article>
+
+        </section>
+    </div>
+</div>
+</body>
+</html>

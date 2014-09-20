@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Acceptance Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>
+                Definition
+            </h3>
+            <article>
+                <p>Acceptance Testing is a level of the software testing process where a system is tested for acceptability.</p>
+                <p>The purpose of this test is to evaluate the system’s compliance with the business requirements and assess whether it is acceptable for delivery.</p>
+            </article>
+
+        </section>
+        <br/>
+        <img src="../images/acceptance_testing.jpg" class="sdimg" alt=""/>
+        <section>
+            <br/>
+            <h3>Analogy</h3>
+            <article>
+                <p>During the process of manufacturing a ballpoint pen, the cap, the body, the tail and clip, the ink cartridge and the ballpoint are produced separately and unit tested separately. When two or more units are ready, they are assembled and Integration Testing is performed. When the complete pen is integrated, System Testing is performed. Once the System Testing is complete, Acceptance Testing is performed so as to confirm that the ballpoint pen is ready to be made available to the end-users.</p>
+            </article>
+
+            <h3>Method</h3>
+            <article>
+                <p>Usually, Black Box Testing method is used in Acceptance Testing.</p>
+                <p>Testing does not usually follow a strict procedure and is not scripted but is rather ad-hoc.</p>
+            </article>
+
+            <h3>Tasks</h3>
+            <article>
+                <li>Acceptance Test Plan
+                    <ol>
+
+                        <li>Prepare
+                        <li>Review
+                        <li>Rework
+                        <li>Baseline
+
+                    </ol>
+                </li>
+                <li>Acceptance Test Cases/Checklist
+                    <ol>
+
+                        <li>Prepare
+                        <li>Review
+                        <li>Rework
+                        <li>Baseline
+
+                    </ol>
+                </li>
+                <li>Acceptance Test
+                    <ol>
+                        <li>Perform
+                    </ol>
+                </li>
+            </article>
+
+            <h3>When is it performed?</h3>
+            <article>
+                Acceptance Testing is performed after System Testing and before making the system available for actual use.
+            </article>
+            <h3>
+                Who performs it?
+            </h3>
+            <article>
+<ol>
+                <li>Internal Acceptance Testing (Also known as Alpha Testing) is performed by members of the organization that developed the software but who are not directly involved in the project (Development or Testing). Usually, it is the members of Product Management, Sales and/or Customer Support.
+                <li>External Acceptance Testing is performed by people who are not employees of the organization that developed the software.
+     <ol>
+                <li>Customer Acceptance Testing is performed by the customers of the organization that developed the software. They are the ones who asked the organization to develop the software for them. [This is in the case of the software not being owned by the organization that developed it.]
+                <li>User Acceptance Testing (Also known as Beta Testing) is performed by the end users of the software. They can be the customers themselves or the customers’ customers.
+</ol></li>
+                </ol>
+            </article>
+            <h3>Definition by ISTQB</h3>
+            <article>
+                <p>acceptance testing: Formal testing with respect to user needs, requirements, and business processes conducted to determine  whether or not a system satisfies the acceptance criteria and to enable the user, customers or other authorized entity to determine whether or not to accept the system.</p>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

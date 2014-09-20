@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Software Testing Myths</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>
+                Software Testing Myths and Facts
+            </h3>
+            <article>
+                <p>Just as every field has its myths, so does the field of Software Testing. Software testing myths have arisen primarily due to the following:</p>
+                <ol>
+                    <li>Lack of authoritative facts.
+                    <li>Evolving nature of the industry.
+                    <li>General flaws in human logic.
+                </ol>
+                <p>
+                    Some of the myths are explained below, along with their related facts:
+                </p>
+                <ol>
+
+                    <li><b>MYTH</b>: Quality Control = Testing. <br/>
+                    <b>FACT</b>: Testing is just one component of software quality control. Quality Control includes other activities such as Reviews.
+                    <li><b>MYTH</b>: The objective of Testing is to ensure a 100% defect- free product.<br/>
+                    <b>FACT</b>: The objective of testing is to uncover as many defects as possible. Identifying all defects and getting rid of them is impossible.
+                    <li><b>MYTH</b>: Testing is easy.<br/>
+                    <b>FACT</b>: Testing can be difficult and challenging (sometimes, even more so than coding).
+                    <li><b>MYTH</b>: Anyone can test.<br/>
+                    <b>FACT</b>: Testing is a rigorous discipline and requires many kinds of skills.
+                    <li><b>MYTH</b>: There is no creativity in testing.<br/>
+                    <b>FACT</b>: Creativity can be applied when formulating test approaches, when designing tests, and even when executing tests.
+                    <li><b>MYTH</b>: Automated testing eliminates the need for manual testing.<br/>
+                    <b>FACT</b>: 100% test automation cannot be achieved. Manual Testing, to some level, is always necessary.
+                    <li><b>MYTH</b>: When a defect slips, it is the fault of the Testers.<br/>
+                    <b>FACT</b>: Quality is the responsibility of all members/stakeholders, including developers, of a project.
+                    <li><b>MYTH</b>: Software Testing does not offer opportunities for career growth.<br/>
+                    <b>FACT</b>: Gone are the days when users had to accept whatever product was dished to them; no matter what the quality. With the abundance of competing software and increasingly demanding users, the need for software testers to ensure high quality will continue to grow.
+
+                </ol>
+                <p>Management folk tend to have a special affinity for myths; so it will be your responsibility as a software tester to convince them that they are wrong. Tip: Put forward your arguments with relevant examples and numbers to validate your claims.</p>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

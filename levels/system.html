@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>System Testing</h2>
+    </header>
+    <div data-role="content">
+        <h3>Definition</h3>
+        <article>
+            <p><b>System Testing</b> is a level of the software testing process where a complete, integrated system/software is tested</p>
+            <p>The purpose of this test is to evaluate the system’s compliance with the specified requirements.</p>
+        </article>
+        <img src="../images/system_testing.jpg" class="sdimg" alt=""/>
+        <section>
+            <h3>Analogy</h3>
+            <article>
+                <p>
+                    During the process of manufacturing a ballpoint pen, the cap, the body, the tail, the ink cartridge and the ballpoint are produced separately and unit tested separately. When two or more units are ready, they are assembled and Integration Testing is performed. When the complete pen is integrated, System Testing is performed.
+                </p>
+            </article>
+
+            <h3>Method</h3>
+            <article>
+                <p>Usually, Black Box Testing method is used.</p>
+            </article>
+
+            <h3>Tasks</h3>
+            <article>
+                <ol>
+                    <li>System Test Plan
+                        <ol>
+
+                            <li>Prepare
+                            <li>Review
+                            <li>Rework
+                            <li>Baseline
+
+                        </ol>
+                    </li>
+                    <li>System Test Cases
+                        <ol>
+
+                            <li>Prepare
+                            <li>Review
+                            <li>Rework
+                            <li>Baseline
+
+                        </ol>
+                    </li>
+                    <li>System Test
+                        <ol>
+                            <li>Perform
+                        </ol>
+                    </li>
+                </ol>
+            </article>
+            <h3>When is it performed?</h3>
+            <article>
+                <p>
+                    System Testing is performed after Integration Testing and before Acceptance Testing.
+                </p>
+            </article>
+            <h3>
+                Who performs it?
+            </h3>
+            <article>
+                <p>Normally, independent Testers perform System Testing.</p>
+            </article>
+            <h3>
+                Definition by ISTQB
+            </h3>
+            <article>
+                system testing: The process of testing an integrated system to verify that it meets specified
+                requirements.
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>
