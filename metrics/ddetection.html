@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Defect Detection Efficiency</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>
+                    Defect Detection Efficiency (DDE) is the number of defects detected during a phase/stage that are injected during that same phase divided by the total number of defects injected during that phase.
+                </p>
+
+            </article>
+
+            <h3>Elaboration</h3>
+            <article>
+                <ol>
+                    <li>defects:
+                        <ol>
+
+                            <li>Are confirmed and agreed upon (not just reported).
+                            <li>Dropped defects are not counted.
+
+                        </ol>
+                    </li>
+                    <li>phase:
+                        <ol>
+                            <li>
+                                Can be any phase in the software development life cycle where defects can be injected AND detected. For example, Requirement, Design, and Coding.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>injected:
+                        <ol>
+                            <li>
+
+                                The phase a defect is ‘injected’ in is identified by analyzing the defects [For instance, a defect can be detected in System Testing phase but the cause of the defect can be due to wrong design. Hence, the injected phase for that defect is Design phase.]
+
+                            </li>
+                        </ol>
+                    </li>
+                    
+                </ol>
+            </article>
+            <h3>Formula</h3>
+            <article>
+                <ol>
+                    <li>
+                        DDE = (Number of Defects Injected AND Detected in a Phase / Total Number of Defects Injected in that Phase) x 100 %
+                    </li>
+                </ol>
+            </article>
+        </section>
+        <img src="../images/dde1.jpg" class="sdimg" alt=""/>
+
+        <section>
+            <h3>Unit</h3>
+            <article>
+                <ol><li>Percentage(%)</li></ol>
+            </article>
+
+            <h3>Target Value</h3>
+            <article>
+                <p>
+
+                    The ultimate target value for Defect Detection Efficiency is 100% which means that all defects injected during a phase are detected during that same phase and none are transmitted to subsequent phases. [Note: the cost of fixing a defect at a later phase is higher.]
+
+                </p>
+            </article>
+
+            <h3>Uses</h3>
+            <article>
+                <ol>
+
+                    <li>For measuring the quality of the processes (process efficiency) within software development life cycle; by evaluating the degree to which defects introduced during that phase/stage are eliminated before they are transmitted into subsequent phases/stages.
+                    <li>For identifying the phases in the software development life cycle that are the weakest in terms of quality control and for focusing on them.
+
+                </ol>
+            </article>
+
+        </section>
+    </div>
+</div>
+</body>
+</html>

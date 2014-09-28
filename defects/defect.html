@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Defect</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>
+                    A Software Defect / Bug is a condition in a software product which does not meet a software requirement (as stated in the requirement specifications) or end-user expectations (which may not be specified but are reasonable). In other words, a defect is an error in coding or logic that causes a program to malfunction or to produce incorrect/unexpected results.
+                </p>
+                <ol>
+
+                    <li>A program that contains a large number of bugs is said to be buggy.
+                    <li>Reports detailing bugs in software are known as bug reports. (See <a href="../defects/report.html" data-transition="slide" data-inline="true">Defect Report</a>)
+                    <li>Applications for tracking bugs are known as bug tracking tools.
+                    <li>The process of finding the cause of bugs is known as debugging.
+                    <li>The process of intentionally injecting bugs in a software program, to estimate test coverage by monitoring the detection of those bugs, is known as bebugging.
+
+                </ol>
+
+            </article>
+        </section>
+        <img src="../images/Software_Bug.jpg" class="sdimg" alt=""/>
+        <section>
+            <h3>Classification</h3>
+            <article>
+                <p>Software Defects/ Bugs are normally classified as per:</p>
+                <ol>
+
+                    <li>Severity / Impact (See <a href="severity.html" data-transition="slide" data-inline="true">Defect Severity</a>)
+                    <li>Probability / Visibility (See <a href="../defects/probability.html" data-transition="slide" data-inline="true">Defect Probability</a>)
+                    <li>Priority / Urgency (See <a href="../defects/priority.html" data-transition="slide" data-inline="true">Defect Priority</a>)
+                    <li>Related Dimension of Quality (See <a href="../basics/dimensions.html" data-transition="slide" data-inline="true">Dimensions of Quality</a>)
+                    <li>Related Module / Component
+                    <li>Phase Detected
+                    <li>Phase Injected
+
+                </ol>
+            </article>
+            <h4>Related Module / Component</h4>
+            <article>
+                <p>
+                    Related Module / Component indicates the module or component of the software where the defect was detected. This provides information on which module / component is buggy or risky.
+                </p>
+                <ol>
+
+                    <li>Module/Component A
+                    <li>Module/Component B
+                    <li>Module/Component C
+                    <li>…
+
+                </ol>
+            </article>
+            <h4>Phase Detected</h4>
+            <article>
+            <p>
+                Phase Detected indicates the phase in the software development lifecycle where the defect was identified.
+            </p>
+                <ol>
+
+                    <li>Unit Testing
+                    <li>Integration Testing
+                    <li>System Testing
+                    <li>Acceptance Testing
+
+                </ol>
+            </article>
+
+            <h4>Phase Injected</h4>
+            <article>
+                <p>
+                    Phase Injected indicates the phase in the software development lifecycle where the bug was introduced. Phase Injected is always earlier in the software development lifecycle than the Phase Detected. Phase Injected can be known only after a proper root-cause analysis of the bug.
+                </p>
+                <ol>
+
+                    <li>Requirements Development
+                    <li>High Level Design
+                    <li>Detailed Design
+                    <li>Coding
+                    <li>Build/Deployment
+
+                </ol>
+            </article>
+
+            <article>
+                <p>
+                    Note that the categorizations above are just guidelines and it is up to the project/organization to decide on what kind of categorization to use. In most cases, the categorization depends on the defect tracking tool that is being used. It is essential that project members agree beforehand on the categorization (and the meaning of each categorization) so as to avoid arguments, conflicts, and unhealthy bickering later.
+                </p>
+                <p>
+                    <b>NOTE</b>: We prefer the term ‘Defect’ over the term ‘Bug’ because ‘Defect’ is more comprehensive.
+                </p>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

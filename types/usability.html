@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Usability Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>
+                    Usability Testing is a type of testing done from an end-user’s perspective to determine if the system is easily usable.
+                </p>
+            </article>
+        </section>
+        <img src="../images/Usability-Testing.jpg" class="sdimg" alt=""/>
+        <section>
+            <h3>Merriam-Webster’s Definition</h3>
+            <article>
+                <b>usable</b> <br/>
+                – capable of being used <br/>
+                – convenient and practicable for use <br/>
+            </article>
+
+            <h3>ISTQB’s Definition</h3>
+            <article>
+                <p>
+                    <b>usability testing</b>: Testing to determine the extent to which the software product is
+                    understood, easy to learn, easy to operate and attractive to the users under specified
+                    conditions.
+                </p>
+            </article>
+
+            <h3>CSTE CBOK Definition</h3>
+            <article>
+                <p>
+                    <b>Usability Test</b>: The purpose of this event is to review the application user interface and other human factors of the application with the people who will be using the application. This is to ensure that the design (layout and sequence, etc.) enables the business functions to be executed as easily and intuitively as possible.
+                </p>
+            </article>
+
+            <h3>Elaboration</h3>
+            <article>
+                <p>
+                    Systems may be built 100% in accordance with the specifications. Yet, they may be ‘unusable’ when it lands in the hands of the end-users. For instance, let’s say a user needs to print a Financial Update Report, every 30 minutes, and he/she has to go through the following steps:
+                </p>
+
+                <ol>
+                    <li>Login to the system</li>
+                    <li>Click Reports</li>
+                    <li>From the groups of reports, select Financial Reports</li>
+                    <li>From the list of financial reports, select Financial Update Report</li>
+                    <li>Specify the following parameters
+                        <ol style="list-style:lower-alpha">
+
+                            <li>Date Range
+                            <li>Time Zone
+                            <li>Departments
+                            <li>Units
+
+                        </ol>
+                    </li>
+                    <li>Click Generate Report</li>
+                    <li>Click Print</li>
+                    <li>Select an option
+                        <ol style="list-style:lower-alpha">
+
+                            <li>Print as PDF
+                            <li>Print for Real
+
+                        </ol>
+                    </li>
+                </ol>
+
+                <p>
+                    If that’s the case, the system is probably practically unusable (though it functions perfectly fine). If the report is to be printed frequently, wouldn’t it be convenient if the user could get the job done in a couple of clicks, rather than having to go through numerous steps like listed above? What if there was a feature to save frequently generated reports as a template and if the saved reports were readily available for printing from the homepage?
+                </p>
+
+                <p>Think smart, folks!</p>
+
+            </article>
+            <h3>Levels Applicable To</h3>
+            <article>
+                <p>
+                    Usability Testing is normally performed during System Testing and Acceptance Testing levels.
+                </p>
+            </article>
+
+
+        </section>
+    </div>
+</div>
+</body>
+</html>

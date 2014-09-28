@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Defect Severity</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>
+                Definition
+            </h3>
+            <article>
+                <p>
+                    Defect Severity or Impact is a classification of software defect (bug) to indicate the degree of negative impact on the quality of software.
+                </p>
+            </article>
+            <h4>
+                ISTQB Definition
+            </h4>
+            <article>
+                <p>
+                    The degree of impact that a defect has on the development or operation of a component or system.
+                </p>
+            </article>
+            <h3>Defect Severity Classification</h3>
+            <article>
+                <p>
+                    The actual terminologies, and their meaning, can vary depending on people, projects, organizations, or defect tracking tools, but the following is a normally accepted classification.
+                </p>
+                <ol>
+
+                    <li><b>Critical</b>: The defect affects critical functionality or critical data. It does not have a workaround. Example: Unsuccessful installation, complete failure of a feature.
+                    <li><b>Major</b>: The defect affects major functionality or major data. It has a workaround but is not obvious and is difficult. Example: A feature is not functional from one module but the task is doable if 10 complicated indirect steps are followed in another module/s.
+                    <li><b>Minor</b>: The defect affects minor functionality or non-critical data. It has an easy workaround. Example: A minor feature that is not functional in one module but the same task is easily doable from another module.
+                    <li><b>Trivial</b>: The defect does not affect functionality or data. It does not even need a workaround. It does not impact productivity or efficiency. It is merely an inconvenience. Example: Petty layout discrepancies, spelling/grammatical errors.
+
+                </ol>
+                <p>
+                    Severity is also denoted as
+                </p>
+                <ol>
+
+                    <li>S1 = Critical
+                    <li>S2 = Major
+                    <li>S3 = Minor
+                    <li>S4 = Trivial
+
+                </ol>
+            </article>
+            <h3>Caution</h3>
+            <article>
+                <p>
+                    Defect Severity is one of the most common causes of feuds between Testers and Developers. A typical situation is where a Tester classifies the Severity of Defect as Critical or Major but the Developer refuses to accept that: He/she believes that the defect is of Minor or Trivial severity.
+                </p>
+                <p>
+                    Though we have provided you some guidelines in this article on how to interpret each level of severity, this is still a very subjective matter and chances are high that one will not agree with the definition of the other. You can however lessen the chances of differing opinions in your project by discussing (and documenting, if necessary) what each level of severity means and by agreeing to at least some standards (substantiating with examples, if necessary.)
+                </p>
+
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

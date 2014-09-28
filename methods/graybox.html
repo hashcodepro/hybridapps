@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Gray Box Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>Gray Box Testing is a software testing method which is a combination of Black Box Testing method and White Box Testing method. In Black Box Testing, the internal structure of the item being tested is unknown to the tester and in White Box Testing the internal structure in known. In Gray Box Testing, the internal structure is partially known. This involves having access to internal data structures and algorithms for purposes of designing the test cases, but testing at the user, or black-box level.</p>
+                <p>
+                    Gray Box Testing is named so because the software program, in the eyes of the tester is like a gray/semi-transparent box; inside which one can partially see.
+                </p>
+            </article>
+
+            <h3>Example</h3>
+            <article>
+                <p>
+                    An example of Gray Box Testing would be when the codes for two units/modules are studied (White Box Testing method) for designing test cases and actual tests are conducted using the exposed interfaces (Black Box Testing method).
+                </p>
+            </article>
+            <h3>Levels Applicable To</h3>
+            <article>
+                <p>
+                    Though Gray Box Testing method may be used in other levels of testing, it is primarily useful in Integration Testing.
+                </p>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

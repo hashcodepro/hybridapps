@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Defect Life Cycle</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>
+                Definition
+            </h3>
+            <article>
+                <p>
+                    <b>Defect Life Cycle</b> (Bug Life cycle) is the journey of a defect from its identification to its closure. The Life Cycle varies from organization to organization and is governed by the software testing process the organization or project follows and/or the Defect tracking tool being used.
+                </p>
+                <p>
+                    Nevertheless, the life cycle in general resembles the following:
+                </p>
+
+            </article>
+        </section>
+        <img src="../images/Defect_Life_Cycle.jpg" class="sdimg" alt=""/>
+        <section>
+            <br/>
+            <article>
+
+                <ul data-role="listview" data-icon="none">
+                    <li>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a"><b>Status</b></div>
+                            <div class="ui-block-b"><b>Alternative Status</b></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">New</div>
+                            <div class="ui-block-b"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">Assigned</div>
+                            <div class="ui-block-b">Open</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">Deferred</div>
+                            <div class="ui-block-b"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">Dropped</div>
+                            <div class="ui-block-b">Rejected</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">Completed</div>
+                            <div class="ui-block-b">Fixed, Resolved, Test</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">Reassigned</div>
+                            <div class="ui-block-b">Reopened</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">Closed</div>
+                            <div class="ui-block-b">Verified</div>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <br/>
+            <h4>Defect Status Explanation</h4>
+            <article>
+                <ol>
+
+                    <li>NEW: Tester finds a defect and posts it with the status NEW. This defect is yet to be studied/approved. The fate of a NEW defect is one of ASSIGNED, DROPPED and DEFERRED.
+                    <li>ASSIGNED / OPEN: Test / Development / Project lead studies the NEW defect and if it is found to be valid it is assigned to a member of the Development Team. The assigned Developer’s responsibility is now to fix the defect and have it COMPLETED. Sometimes, ASSIGNED and OPEN can be different statuses. In that case, a defect can be open yet unassigned.
+                    <li>DEFERRED: If a valid NEW or ASSIGNED defect is decided to be fixed in upcoming releases instead of the current release it is DEFERRED. This defect is ASSIGNED when the time comes.
+                    <li>DROPPED / REJECTED: Test / Development/ Project lead studies the NEW defect and if it is found to be invalid, it is DROPPED / REJECTED. Note that the specific reason for this action needs to be given.
+                    <li>COMPLETED / FIXED / RESOLVED / TEST: Developer ‘fixes’ the defect that is ASSIGNED to him or her. Now, the ‘fixed’ defect needs to be verified by the Test Team and the Development Team ‘assigns’ the defect back to the Test Team. A COMPLETED defect is either CLOSED, if fine, or REASSIGNED, if still not fine.
+                    <li>If a Developer cannot fix a defect, some organizations may offer the following statuses:
+                    <ol>
+                    <li>Won’t Fix / Can’t Fix: The Developer will not or cannot fix the defect due to some reason.
+                    <li>Can’t Reproduce: The Developer is unable to reproduce the defect.
+                    <li>Need More Information: The Developer needs more information on the defect from the Tester.
+                    </ol>
+                    <li>REASSIGNED / REOPENED: If the Tester finds that the ‘fixed’ defect is in fact not fixed or only partially fixed, it is reassigned to the Developer who ‘fixed’ it. A REASSIGNED defect needs to be COMPLETED again.
+                    <li>CLOSED / VERIFIED: If the Tester / Test Lead finds that the defect is indeed fixed and is no more of any concern, it is CLOSED / VERIFIED. This is the happy ending.</li>
+
+                </ol>
+            </article>
+            <br/>
+            <h4>
+                Defect Life Cycle Implementation Guidelines
+            </h4>
+            <article>
+                <ol>
+
+                    <li>Make sure the entire team understands what each defect status exactly means. Also, make sure the defect life cycle is documented.
+                    <li>Ensure that each individual clearly understands his/her responsibility as regards each defect.
+                    <li>Ensure that enough detail is entered in each status change. For example, do not simply DROP a defect but provide a reason for doing so.
+                    <li>If a defect tracking tool is being used, avoid entertaining any ‘defect related requests’ without an appropriate change in the status of the defect in the tool. Do not let anybody take shortcuts. Or else, you will never be able to get up-to-date defect metrics for analysis.
+
+                </ol>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

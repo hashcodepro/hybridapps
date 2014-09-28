@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Security Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>
+                    Security Testing is a type of software testing that intends to uncover vulnerabilities of the system and determine that its data and resources are protected from possible intruders.
+                </p>
+            </article>
+        </section>
+        <img src="../images/security_testing.jpg" class="sdimg" alt=""/>
+        <section>
+            <h3>
+                Focus Area
+            </h3>
+            <article>
+                <p>
+                    There are four main focus areas to be considered in security testing (Especially for web sites/applications):
+                </p>
+                <ol>
+
+                    <li><b>Network security</b>: This involves looking for vulnerabilities in the network infrastructure (resources and policies).
+                    <li><b>System software security</b>: This involves assessing weaknesses in the various software (operating system, database system, and other software) the application depends on.
+                    <li><b>Client-side application security</b>: This deals with ensuring that the client (browser or any such tool) cannot be manipulated.
+                    <li><b>Server-side application security</b>: This involves making sure that the server code and its technologies are robust enough to fend off any intrusion.
+
+                </ol>
+            </article>
+
+            <h3>
+                Example Of Basic Security Test
+            </h3>
+            <article>
+                <p>
+                    This is an example of a very basic security test which anyone can perform on a web site/application:
+                </p>
+                <ol>
+
+                    <li>Log into the web application.
+                    <li>Log out of the web application.
+                    <li>Click the BACK button of the browser (Check if you are asked to log in again or if you are provided the logged-in application.)
+
+                </ol>
+                <p>
+                    Most types of security testing involve complex steps and out-of-the-box thinking but, sometimes, it is simple tests like the one above that help expose the most severe security risks.
+                </p>
+            </article>
+            <h3>OWASP</h3>
+            <article>
+                <p>
+                    The Open Web Application Security Project (OWASP) is a great resource for software security professionals. Be sure to check out the Testing Guide:
+                    <a href="https://www.owasp.org/index.php/Category:OWASP_Testing_Project">click here more info on OWASP</a>
+                </p>
+                <p>OWASP Top 10 security threats for 2013 are:</p>
+                <ol>
+
+                    <li>Injection
+                    <li>Broken Authentication and Session Management
+                    <li>Cross-Site Scripting (XSS)
+                    <li>Insecure Direct Object References
+                    <li>Security Misconfiguration
+                    <li>Sensitive Data Exposure
+                    <li>Missing Function Level Access Control
+                    <li>Cross-Site Request Forgery (CSRF)
+                    <li>Using Known Vulnerable Components
+                    <li>Unvalidated Redirects and Forwards
+
+                </ol>
+            </article>
+            <h3>Building Trust</h3>
+            <article>
+                <p>
+                    There is an infinite number of ways to break an application. And, security testing, by itself, is not the only (or the best) measure of how secure an application is. But, it is highly recommended that security testing is included as part of the standard software development process. After all, the world is teeming with hackers/pranksters and everyone wishes to be able to trust the system/software one produces or uses.
+                </p>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

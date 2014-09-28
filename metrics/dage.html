@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Defect Age</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <article>
+                <p>
+                    Defect Age can be measured in terms of any of the following:
+                </p>
+                <ol>
+
+                    <li>Time
+                    <li>Phases
+
+                </ol>
+            </article>
+            <h3>Defect Age (In Time)</h3>
+            <h4>Definition</h4>
+            <article>
+                <p>
+                    Defect Age (in Time) is the difference in time between the date a defect is detected and the current date (if the defect is still open) or the date the defect was fixed (if the defect is already fixed).
+                </p>
+                <h4>
+                    Elaboration
+                </h4>
+                <ol>
+
+                    <li>The ‘defects’ are confirmed and assigned (not just reported).
+                    <li>Dropped defects are not counted.
+                    <li>The difference in time can be calculated in hours or in days.
+                    <li>‘fixed’ means that the defect is verified and closed; not just ‘completed’ by the developer.
+
+                </ol>
+                 <h4>Defect Age Formula</h4>
+                <p><b>Defect Age in Time = Defect Fix Date (OR Current Date) – Defect Detection Date</b></p>
+
+                <p>Normally, average age of all defects is calculated.</p>
+                <h4>
+                    Example
+                </h4>
+                <p>
+                    If a defect was detected on 01/01/2009 10:00:00 AM and closed on 01/04/2009 12:00:00 PM, the Defect Age is 74 hours.
+                </p>
+
+                <h4>Uses</h4>
+                <ol>
+                    <li>
+                        For determining the responsiveness of the development/testing team. Lesser the age better the responsiveness.
+                    </li>
+                </ol>
+            </article>
+
+            <h3>Defect Age (In Phases)</h3>
+            <article>
+                <h4>
+                    Definition
+                </h4>
+                <p>
+                    Defect Age (in Phases) is the difference in phases between the defect injection phase and the defect detection phase.
+                </p>
+
+                <h4>Elaboration</h4>
+                <ol>
+
+                    <li>‘defect injection phase’ is the phase in the software life cycle where the defect was introduced.
+                    <li>‘defect detection phase’ is the phase in the software life cycle where the defect was identified.
+
+                </ol>
+
+                <h4>Defect Age Formula</h4>
+                <p><b>Defect Age in Phase = Defect Detection Phase – Defect Injection Phase</b></p>
+
+                <p>
+                    Normally, average of all defects is calculated.
+                </p>
+
+                <h4>
+                    Example
+                </h4>
+                <p>
+                    Let’s say the software life cycle has the following phases:
+                </p>
+                <ol style="list-style:decimal">
+
+                    <li>Requirements Development
+                    <li>High-Level Design
+                    <li>Detail Design
+                    <li>Coding
+                    <li>Unit Testing
+                    <li>Integration Testing
+                    <li>System Testing
+                    <li>Acceptance Testing
+
+                </ol>
+                <p>
+                    If a defect is identified in System Testing and the defect was introduced in Requirements Development, the Defect Age is 6.
+                </p>
+
+                <h4>Uses</h4>
+                <ol>
+                    <li>
+                        For assessing the effectiveness of each phase and any review/testing activities. Lesser the age better the effectiveness.
+                    </li>
+                </ol>
+
+
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

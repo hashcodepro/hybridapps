@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Test Script</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>
+                    A Test Script is a set of instructions (written using a scripting/programming language) that is performed on a system under test to verify that the system performs as expected. Test scripts are used in automated testing.
+                </p>
+                <p>
+                    Sometimes, a set of instructions (written in a human language), used in manual testing,  is also called a Test Script but a better term for that would be a Test Case.
+                </p>
+                <p>
+                    Some scripting languages used in automated testing are:
+                </p>
+                <ol>
+
+                    <li>JavaScript
+                    <li>Perl
+                    <li>Python
+                    <li>Ruby
+                    <li>Tcl
+                    <li>Unix Shell Script
+                    <li>VBScript
+
+                </ol>
+                <p>
+                    There are also many Test Automation Tools/Frameworks that generate the test scripts for you; without the need for actual coding. Many of these tools have their own scripting languages (some of them based on a core scripting languages). For example, Sikuli, a GUI automation tool, uses Sikuli Script which is based on Python. A test script can be as simple as the one below:
+                </p>
+
+                <ol style="list-style:none" id="ts_ol">
+                    <li>
+                        def sample_test_script (self):
+                        <ol style="list-style:none">
+                            <li>type ("TextA")
+
+                            <li>click (ImageButtonA)
+
+                            <li>assertExist (ImageResultA)
+                        </ol>
+                    </li>
+                </ol>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Functional Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>
+                    Functional Testing is a type of software testing whereby the system is tested against the functional requirements/specifications.
+                </p>
+            </article>
+            <h3>Elaboration</h3>
+            <article>
+                <p>
+                    Functions (or features) are tested by feeding them input and examining the output. Functional testing ensures that the requirements are properly satisfied by the application. This type of testing is not concerned with how processing occurs, but rather, with the results of processing.
+                </p>
+                <p>
+                    During functional testing, Black Box Testing technique is used in which the internal logic of the system being tested is not known to the tester.
+                </p>
+                <p>
+                    Functional testing is normally performed during the levels of System Testing and Acceptance Testing.
+                </p>
+                <p>
+                    Typically, functional testing involves the following steps:
+                </p>
+                <ol>
+
+                    <li>Identify functions that the software is expected to perform.
+                    <li>Create input data based on the function’s specifications.
+                    <li>Determine the output based on the function’s specifications.
+                    <li>Execute the test case.
+                    <li>Compare the actual and expected outputs.
+
+                </ol>
+            </article>
+
+            <h3>Advantages</h3>
+            <article>
+                <ol>
+
+                    <li>It simulates actual system usage.
+                    <li>It does not make any system structure assumptions.
+
+                </ol>
+            </article>
+            <h3>Disadvantages</h3>
+            <article>
+                <ol>
+
+                    <li>It has a potential of missing logical errors in software.
+                    <li>It has a high possibility of redundant testing.
+
+                </ol>
+            </article>
+            <h3>Note</h3>
+            <article>
+                <p>
+                    Functional testing is more effective when the test conditions are created directly from user/business requirements. When test conditions are created from the system documentation (system requirements/ design documents), the defects in that documentation will not be detected through testing and this may be the cause of end-users’ wrath when they finally use the software.
+                </p>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

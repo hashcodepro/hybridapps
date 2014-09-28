@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Defect Priority</h2>
+
+    </header>
+    <div data-role="content">
+        <h3>Definition</h3>
+        <article>
+            <p>
+                <b>Defect Priority</b> (Bug Priority) indicates the importance or urgency of fixing a defect. Though priority may be initially set by the Software Tester, it is usually finalized by the Project/Product Manager.
+            </p>
+            <p>
+                Priority can be categorized into the following levels:
+            </p>
+            <ol>
+
+                <li>Urgent: Must be fixed in the next build.
+                <li>High: Must be fixed in any of the upcoming builds but should be included in the release.
+                <li>Medium: May be fixed after the release / in the next release.
+                <li>Low: May or may not be fixed at all.
+
+            </ol>
+
+            <p>
+                <b>NOTE</b>: Priority is quite a subjective decision; do not take the categorizations above as authoritative. However, at a high level, priority is determined by considering the following:
+            </p>
+            <ol>
+
+                <li>Business need for fixing the defect
+                <li>Severity/Impact
+                <li>Probability/Visibility
+                <li>Available Resources (Developers to fix and Testers to verify the fixes)
+                <li>Available Time (Time for fixing, verifying the fixes and performing regression tests after the verification of the fixes)
+
+            </ol>
+        </article>
+        <h4>ISTQB Definition</h4>
+        <article>
+                <ol>
+            <li>
+                priority: The level of (business) importance assigned to an item, e.g. defect.
+            </li>
+                </ol>
+            <p>
+                Defect Priority needs to be managed carefully in order to avoid product instability, especially when there is a large of number of defects.
+            </p>
+        </article>
+    </div>
+</div>
+</body>
+</html>

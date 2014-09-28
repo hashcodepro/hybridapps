@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Performance Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>
+                    Performance Testing is a type of software testing that intends to determine how a system performs in terms of responsiveness and stability under a certain load.
+                </p>
+            </article>
+        </section>
+        <img src="../images/performance_testing.png" class="sdimg" alt=""/>
+        <section>
+                <p>There are basically four kinds of performance testing:</p>
+            <h3>Types</h3>
+            <article>
+                <ol>
+
+                    <li><b>Load Testing</b> is a type of performance testing conducted to evaluate the behavior of a system at increasing workload.
+                    <li><b>Stress Testing</b> a type of performance testing conducted to evaluate the behavior of a system at or beyond the limits of its anticipated workload.
+                    <li><b>Endurance Testing</b> is a type of performance testing conducted to evaluate the behavior of a system when a significant workload is given continuously.
+                    <li><b>Spike Testing</b> is a type of performance testing conducted to evaluate the behavior of a system when the load is suddenly and substantially increased.
+
+                </ol>
+            </article>
+            <h3>Tips</h3>
+            <article>
+                <ol>
+
+                    <li>Establish a test environment as close to the production environment as possible.
+                    <li>Isolate the test environment even from the QA or UAT environment.
+                    <li>Though there’s no perfect tool for performance testing, research and decide on the tool that best fits your purpose.
+                    <li>Do not rely on the results of one test. Conduct multiple tests to arrive at an average number. Be wary of any changes to the test environment from one test to the other.
+
+                </ol>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

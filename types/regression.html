@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Regression Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>
+                Definition
+            </h3>
+            <article>
+                <p>
+                    Regression testing is a type of software testing that intends to ensure that changes (enhancements or defect fixes) to the software have not adversely affected it.
+                </p>
+            </article>
+            <h3>
+                Elaboration
+            </h3>
+            <article>
+                <p>
+                    The likelihood of any code change impacting functionalities that are not directly associated with the code is always there and it is essential that regression testing is conducted to make sure that fixing one thing has not broken another thing.
+                </p>
+                <p>
+                    During regression testing, new test cases are not created but previously created test cases are re-executed.
+                </p>
+            </article>
+            <h3>
+                Levels Applicable To
+            </h3>
+            <article>
+                <p>
+                    Regression testing can be performed during any level of testing (Unit, Integration, System, or Acceptance) but it is mostly relevant during System Testing.
+                </p>
+            </article>
+            <h3>
+                Extent
+            </h3>
+            <article>
+                <p>
+                    In an ideal case, a full regression test is desirable but oftentimes there are time/resource constraints. In such cases, it is essential to do an impact analysis of the changes to identify areas of the software that have the highest probability of being affected by the change and that have the highest impact to users in case of malfunction and focus testing around those areas.
+                </p>
+                <p>
+                    Due to the scale and importance of regression testing, more and more companies and projects are adopting regression test automation tools.
+                </p>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

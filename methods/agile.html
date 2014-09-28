@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Agile Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>What is agile testing ?</h3>
+            <article>
+                <p>
+                    A software testing practice that follows the principles of agile software development is called Agile Testing. Agile is an iterative development methodology, where requirements evolve through collaboration between the customer and self-organizing teams and agile aligns development with customer needs.
+                </p>
+
+            </article>
+
+            <h3>Advantages</h3>
+            <article>
+                <ol>
+
+
+                    <li>Agile Testing Saves Time and Money
+
+                    <li>Less Documentation
+
+                    <li>Regular feedback from the end user
+
+                    <li>Daily meetings can help to determine the issues well in advance
+
+                </ol>
+            </article>
+
+            <h3>Principles of Agile Testing</h3>
+            <article>
+                <ol>
+
+
+                    <li><b>Testing is NOT a Phase</b>: Agile team tests continuously and continuous testing is the only way to ensure continuous progress.
+
+                    <li><b>Testing Moves the project Forward</b>: When following conventional methods, testing is considered as quality gate but agile testing provide feedback on an ongoing basis and the product meets the business demands.
+
+                    <li><b>Everyone Tests</b>: In conventional SDLC, only test team tests while in agile including developers and BA's test the application.
+
+                    <li><b>Shortening Feedback Response Time</b>: In conventional SDLC, only during the acceptance testing, the Business team will get to know the product development, while in agile for each and every iteration, they are involved and continuous feedback shortens the feedback response time and cost involved in fixing is also less.
+
+                    <li><b>Clean Code</b>: Raised defects are fixed within the same iteration and thereby keeping the code clean.
+
+                    <li><b>Reduce Test Documentation</b>: Instead of very lengthy documentation, agile testers use reusable checklist, focus on the essence of the test rather than the incidental details.
+
+                    <li><b>Test Driven</b>: In conventional methods, testing is performed after implementation while in agile testing, testing is done while implementation.
+
+                </ol>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

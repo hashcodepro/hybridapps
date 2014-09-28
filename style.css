@@ -1,3 +1,7 @@
+body{
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 #page{
     height:100%;
     width:100%;
@@ -39,7 +43,7 @@ ul li a {
 }
 
 ul li:hover{
-    background-color: #DADFE1;
+
 }
 a:link,a:active,a:visited{
     color:#34495E;
@@ -55,4 +59,24 @@ td{
 .sdimg{
     width:80%;
     margin:0 10% 0 10%;
+}
+td{
+    padding:5px 7px 5px 0;
+}
+
+.ui-grid-a .ui-block-a{width:35%; vertical-align: text-top;}
+.ui-grid-a .ui-block-b{width:65%; vertical-align: text-top;}
+
+#tce ol{
+    list-style:decimal;
+}
+
+#ts_ol li {
+    padding:5px;
+    background-color:beige;
+}
+
+#ts_ol{
+    padding:0;
+    margin:0;
 }

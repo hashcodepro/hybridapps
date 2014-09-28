@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Defect Density</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>
+                    Defect Density is the number of confirmed defects detected in software/component during a defined period of development/operation divided by the size of the software/component.
+                </p>
+            </article>
+
+            <h3>Elaboration</h3>
+            <article>
+                <p>
+                    The ‘defects’ are:
+                </p>
+                <ol>
+
+                    <li>confirmed and agreed upon (not just reported).
+                    <li>Dropped defects are not counted.
+
+                </ol>
+
+                <p>
+                    The period might be for one of the following:
+                </p>
+                <ol>
+
+                    <li>for a duration (say, the first month, the quarter, or the year).
+                    <li>for each phase of the software life cycle.
+                    <li>for the whole of the software life cycle.
+
+                </ol>
+
+                <p>
+                    The size is measured in one of the following:
+                </p>
+                <ol>
+
+                    <li>Function Points (FP)
+                    <li>Source Lines of Code
+
+                </ol>
+
+
+            </article>
+
+            <h3>Defect Density Formula</h3>
+        </section>
+        <img src="../images/defect_density-300x68.jpg" class="sdimg" alt=""/>
+        <section>
+            <h3>Uses</h3>
+            <article>
+                    <ol>
+
+                        <li>For comparing the relative number of defects in various software components so that high-risk components can be identified and resources focused towards them.
+                        <li>For comparing software/products so that quality of each software/product can be quantified and resources focused towards those with low quality.
+
+                    </ol>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

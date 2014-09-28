@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Test Plan</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Test Plan Definition</h3>
+            <article>
+                <p>
+                    A Software Test Plan is a document describing the testing scope and activities. It is the basis for formally testing any software/product in a project.
+                </p>
+                <h4>ISTQB Definition</h4>
+                <ol>
+                    <li><b>test plan</b>: A document describing the scope, approach, resources and schedule of intended test activities. It identifies amongst others test items, the features to be tested, the testing tasks, who will do each task, degree of tester independence, the test environment, the test design techniques and entry and exit criteria to be used, and the rationale for their choice,and any risks requiring contingency planning. It is a record of the test planning process.
+                    <li><b>master test plan</b>: A test plan that typically addresses multiple test levels.
+                    <li><b>phase test plan</b>: A test plan that typically addresses one test phase.
+                </ol>
+            </article>
+        </section>
+        <img src="../images/Master_Test_Plan.jpg" class="sdimg" alt=""/>
+        <section>
+            <h3>
+                Test Plan Types
+            </h3>
+            <article>
+                <p>
+                    One can have the following types of test plans:
+                </p>
+                <ol>
+
+                    <li><b>Master Test Plan</b>: A single high-level test plan for a project/product that unifies all other test plans.
+                    <li><b>Testing Level Specific Test Plans</b>:Plans for each level of testing.
+                    <ol>
+                    <li>Unit Test Plan
+                    <li>Integration Test Plan
+                    <li>System Test Plan
+                    <li>Acceptance Test Plan
+                    </ol>
+                    <li><b>Testing Type Specific Test Plans</b>: Plans for major types of testing like Performance Test Plan and Security Test Plan.
+
+                </ol>
+            </article>
+            <h3>Test Plan Template</h3>
+            <article>
+                <p>
+                    The format and content of a software test plan vary depending on the processes, standards, and test management tools being implemented. Nevertheless, the following format, which is based on IEEE standard for software test documentation, provides a summary of what a test plan can/should contain.
+                </p>
+            </article>
+            <h4>Test Plan Identifier</h4>
+            <article>
+                <p>
+                <ol>
+                    <li>
+                        Provide a unique identifier for the document. (Adhere to the Configuration Management System if you have one.)
+                    </li>
+                </ol>
+                </p>
+            </article>
+            <h4>Introduction</h4>
+            <article>
+                <ol>
+
+                    <li>Provide an overview of the test plan.
+                    <li>Specify the goals/objectives.
+                    <li>Specify any constraints.
+
+                </ol>
+            </article>
+            <h4>References</h4>
+            <article>
+                <ol>
+                    <li>List the related documents, with links to them if available, including the following:
+                        <ol>
+                            <li>Project Plan
+                            <li>Configuration Management Plan
+                        </ol>
+                    </li>
+                </ol>
+            </article>
+            <h4>
+                Test Items
+            </h4>
+            <article>
+                <ol><li>
+                    List the test items (software/products) and their versions.
+                </li></ol>
+            </article>
+
+            <h4>
+                Features to be Tested
+            </h4>
+            <article>
+                <ol>
+
+                    <li>List the features of the software/product to be tested.
+                    <li>Provide references to the Requirements and/or Design specifications of the features to be tested
+
+                </ol>
+            </article>
+
+            <h4>Features Not to Be Tested</h4>
+            <article>
+                <ol>
+
+                    <li>List the features of the software/product which will not be tested.
+                    <li>Specify the reasons these features won’t be tested.
+
+                </ol>
+            </article>
+            <h4>Approach</h4>
+            <article>
+                <ol>
+
+                    <li>Mention the overall approach to testing.
+                    <li>Specify the testing levels [if it's a Master Test Plan], the testing types, and the testing methods [Manual/Automated; White Box/Black Box/Gray Box]
+
+                </ol>
+            </article>
+
+            <h4>Item Pass/Fail Criteria</h4>
+            <article>
+                <ol>
+                    <li>
+                        Specify the criteria that will be used to determine whether each test item (software/product) has passed or failed testing.
+                    </li>
+                </ol>
+            </article>
+
+            <h4>Suspension Criteria and Resumption Requirements</h4>
+            <article>
+                <ol>
+
+                    <li>Specify criteria to be used to suspend the testing activity.
+                    <li>Specify testing activities which must be redone when testing is resumed.
+
+                </ol>
+            </article>
+
+            <h4>
+                Test Deliverables
+            </h4>
+            <article>
+                <ol>
+                    <li>List test deliverables, and links to them if available, including the following:
+                        <ol>
+                            <li>Test Plan (this document itself)</li>
+                            <li>Test Case</li>
+                            <li>Test Script</li>
+                            <li>Defect/Enhancement Logs</li>
+                            <li>Test Reports</li>
+                        </ol>
+                    </li>
+                </ol>
+            </article>
+
+            <h4>Test Environment</h4>
+            <article>
+                <ol>
+
+                    <li>Specify the properties of test environment: hardware, software, network etc.
+                    <Li>List any testing or related tools.
+
+                </ol>
+            </article>
+
+            <h4>Estimate</h4>
+            <article>
+                <ol><li>
+
+                    Provide a summary of test estimates (cost or effort) and/or provide a link to the detailed estimation.
+
+                </li></ol>
+            </article>
+
+            <h4>Schedule</h4>
+            <article>
+                <ol>
+                    <li>Provide a summary of the schedule, specifying key test milestones, and/or provide a link to the detailed schedule</li>
+                </ol>
+            </article>
+            <h4>Staffing and Training Needs</h4>
+            <article>
+                <ol>
+
+                    <li>Specify staffing needs by role and required skills.
+                    <li>Identify training that is necessary to provide those skills, if not already acquired.
+
+                </ol>
+            </article>
+            <h4>Responsibilities</h4>
+            <article>
+                <ol>
+                    <li>List the responsibilities of each team/role/individual.</li>
+                </ol>
+            </article>
+            <h4>Risks</h4>
+            <article>
+                <ol>
+
+                    <li>List the risks that have been identified.
+                    <li>Specify the mitigation plan and the contingency plan for each risk.
+
+                </ol>
+            </article>
+
+            <h4>
+                Assumptions and Dependencies
+            </h4>
+            <article>
+                <ol>
+
+                    <li>List the assumptions that have been made during the preparation of this plan.
+                    <li>List the dependencies.
+
+                </ol>
+            </article>
+            <h4>Approvals</h4>
+            <article>
+                <ol>
+
+                    <li>Specify the names and roles of all persons who must approve the plan.
+                    <li>Provide space for signatures and dates. (If the document is to be printed.)
+
+                </ol>
+            </article>
+
+        <h3>Test Plan Guidelines</h3>
+        <article>
+            <ol>
+
+                <li>Make the plan concise. Avoid redundancy and superfluousness. If you think you do not need a section that has been mentioned in the template above, go ahead and delete that section in your test plan.
+                <li>Be specific. For example, when you specify an operating system as a property of a test environment, mention the OS Edition/Version as well, not just the OS Name.
+                <li>Make use of lists and tables wherever possible. Avoid lengthy paragraphs.
+                <li>Have the test plan reviewed a number of times prior to baselining it or sending it for approval. The quality of your test plan speaks volumes about the quality of the testing you or your team is going to perform.
+                <li>Update the plan as and when necessary. An out-dated and unused document stinks and is worse than not having the document in the first place.
+
+            </ol>
+        </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

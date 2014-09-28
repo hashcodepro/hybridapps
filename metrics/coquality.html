@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Cost Of Quality</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p>
+                    Cost of Quality (COQ) is a measure that quantifies the cost of control/conformance and the cost of failure of control/non-conformance. In other words, it sums up the costs related to prevention and detection of defects and the costs due to occurrences of defects.
+                </p>
+                <ol>
+
+                    <li>Definition by ISTQB: cost of quality: The total costs incurred on quality activities and issues and often split into prevention costs, appraisal costs, internal failure costs and external failure costs.
+                    <li>Definition by QAI: Money spent beyond expected production costs (labor, materials, equipment) to ensure that the product the customer receives is a quality (defect free) product. The Cost of Quality includes prevention, appraisal, and correction or repair costs.
+
+                </ol>
+            </article>
+
+            <h3>Explanation</h3>
+            <article>
+                <ol>
+                <li>Cost of Control (Also known as Cost of Conformance)
+                    <ol>
+                        <li>Prevention Cost
+                            <ol>
+
+                                <li>The cost arises from efforts to prevent defects.
+                                <li>Example: Quality Assurance costs
+
+                            </ol>
+                        </li>
+                        <li>Appraisal Cost
+                        <ol>
+
+                            <li>The cost arises from efforts to detect defects.
+                            <li>Example: Quality Control costs
+
+                        </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>Cost of Failure of Control (Also known as Cost of Non-Conformance)
+                    <ol>
+                        <li>Internal Failure Cost
+                            <ol>
+
+                                <li>The cost arises from defects identified internally and efforts to correct them.
+                                <li>Example: Cost of Rework (Fixing of internal defects and re-testing)
+
+                            </ol>
+                        </li>
+                        <li>External Failure Cost
+                            <ol>
+
+                                <li>The cost arises from defects identified by the client or end-users and efforts to correct them.
+                                <li>Example: Cost of Rework (Fixing of external defects and re-testing) and any other costs due to external defects (Product service/liability/recall, etc)
+
+                            </ol>
+
+                        </li>
+                    </ol>
+                </li>
+                </ol>
+            </article>
+
+            <h3>Formula / Calculation</h3>
+            <article>
+                <p>
+                    Cost of Quality (COQ) = Cost of Control + Cost of Failure of Control
+                </p>
+                <p>
+                    where
+                </p>
+                <p>
+                    Cost of Control = Prevention Cost + Appraisal Cost
+                </p>
+                <p>
+                    and
+                </p>
+                <p>
+                    Cost of Failure of Control = Internal Failure Cost + External Failure Cost
+                </p>
+            </article>
+        </section>
+        <img src="../images/Cost_of_Quality-COQ.gif" class="sdimg" alt=""/>
+
+        <section>
+            <h3>
+                Notes
+            </h3>
+            <article>
+                <ol>
+
+                    <li>In its simplest form, COQ can be calculated in terms of effort (hours/days).
+                    <li>A better approach will be to calculate COQ in terms of money (converting the effort into money and adding any other tangible costs like test environment setup).
+                    <li>The best approach will be to calculate COQ as a percentage of total cost. This allows for comparison of COQ across projects or companies.
+                    <li>To ensure impartiality, it is advised that the Cost of Quality of a project/product be calculated and reported by a person external to the core project/product team (Say, someone from the Accounts Department).
+                    <li>It is desirable to keep the Cost of Quality as low as possible. However, this requires a fine balancing of costs between Cost of Control and Cost of Failure of Control. In general, a higher Cost of Control results in a lower Cost of Failure of Control. But, the law of diminishing returns holds true here as well.
+
+                </ol>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

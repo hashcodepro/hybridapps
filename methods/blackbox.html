@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>Black Box Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p><b>Black Box Testing</b>, also known as Behavioral Testing, is a software testing method in which the internal structure/design/implementation of the item being tested is not known to the tester. These tests can be functional or non-functional, though usually functional.</p>
+            </article>
+        </section>
+        <br/>
+        <img src="../images/black_box_testing-300x149.gif" class="sdimg" alt=""/>
+        <section>
+            <br/>
+            <article>
+                <p>This method is named so because the software program, in the eyes of the tester, is like a black box; inside which one cannot see.</p>
+                <p>Black Box Testing is contrasted with White Box Testing. View Differences between Black Box Testing and White Box Testing.</p>
+                <p>This method of attempts to find errors in the following categories:</p>
+                <ol>
+
+                    <li>Incorrect or missing functions
+                    <li>Interface errors
+                    <li>Errors in data structures or external database access
+                    <li>Behavior or performance errors
+                    <li>Initialization and termination errors
+
+                </ol>
+            </article>
+
+            <h3>Example</h3>
+            <article>
+                A tester, without knowledge of the internal structures of a website, tests the web pages by using a browser; providing inputs (clicks, keystrokes) and verifying the outputs against the expected outcome.
+            </article>
+
+            <h3>Levels Applicable To</h3>
+            <article>
+                <p>Black Box Testing method is applicable to all levels of the software testing process:</p>
+                <ol>
+
+                    <li>Unit Testing
+                    <li>Integration Testing
+                    <li>System Testing
+                    <li>Acceptance Testing
+
+                </ol>
+                <p>The higher the level, and hence the bigger and more complex the box, the more black box testing method comes into use.</p>
+            </article>
+            <h3>Black Box Testing Techniques</h3>
+            <article>
+                <p>Following are some techniques that can be used for designing black box tests.</p>
+                <h4>Equivalence Partitioning</h4>
+                <p>
+                    Equivalence Partitioning is a software test design technique that involves dividing input values into valid and invalid partitions and selecting representative values from each partition as test data.
+                </p>
+
+                <h4>Boundary Value Analysis</h4>
+                <p>
+                    Boundary Value Analysis is a software test design technique that involves determination of boundaries for input values and selecting values that are at the boundaries and just inside/outside of the boundaries as test data.
+                </p>
+
+                <h4>Cause Effect Graphing</h4>
+                <p>
+                    Cause Effect Graphing is a software test design technique that involves identifying the cases (input conditions) and effects (output conditions), producing a Cause-Effect Graph, and generating test cases accordingly.
+                </p>
+            </article>
+
+            <h3>Black Box Testing Advantages</h3>
+            <article>
+                <ol>
+
+                    <li>Tests are done from a user’s point of view and will help in exposing discrepancies in the specifications
+                    <li>Tester need not know programming languages or how the software has been implemented
+                    <li>Tests can be conducted by a body independent from the developers, allowing for an objective perspective and the avoidance of developer-bias
+                    <li>Test cases can be designed as soon as the specifications are complete
+
+                </ol>
+            </article>
+
+            <h3>Black Box Testing Disadvantages</h3>
+            <article>
+                <ol>
+
+                    <li>Without clear specifications, which is the situation in many projects, test cases will be difficult to design
+                    <li>Tests can be redundant if the software designer/ developer has already run a test case.
+                    <li>Ever wondered why a soothsayer closes the eyes when foretelling events? So is almost the case in Black Box Testing.
+                </ol>
+            </article>
+
+            <h3>Definition by ISTQB</h3>
+            <article>
+                <ol>
+                    <li><b>black box testing</b>: Testing, either functional or non-functional, without reference to the
+                internal structure of the component or system.
+                    <li><b>black box test design technique</b>: Procedure to derive and/or select test cases based on an
+                analysis of the specification, either functional or non-functional, of a component or system
+                without reference to its internal structure.
+                </ol>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>

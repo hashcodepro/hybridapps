@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Testing Fundamentals</title>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.support.touchOverflow = true;
+            $.mobile.touchOverflowEnabled = true;
+        });
+    </script>
+</head>
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" id="header" data-position="fixed">
+        Testing Fundamentals
+    </div>
+    <header id="title">
+        <h2>White Box Testing</h2>
+    </header>
+    <div data-role="content">
+        <section>
+            <h3>Definition</h3>
+            <article>
+                <p><b>White Box Testing</b> (also known as Clear Box Testing, Open Box Testing, Glass Box Testing, Transparent Box Testing, Code-Based Testing or Structural Testing) is a software testing method in which the internal structure/design/implementation of the item being tested is known to the tester. The tester chooses inputs to exercise paths through the code and determines the appropriate outputs. Programming know-how and the implementation knowledge is essential. White box testing is testing beyond the user interface and into the nitty-gritty of a system.</p>
+                <p>
+                    This method is named so because the software program, in the eyes of the tester, is like a white/transparent box; inside which one clearly sees.
+                </p>
+            </article>
+
+            <h3>Example</h3>
+            <article>
+                <p>
+                    A tester, usually a developer as well, studies the implementation code of a certain field on a webpage, determines all legal (valid and invalid) AND illegal inputs and verifies the outputs against the expected outcomes, which is also determined by studying the implementation code.
+                </p>
+            </article>
+            <h3>Levels Applicable To</h3>
+            <article>
+                <p>White Box Testing method is applicable to the following levels of software testing:</p>
+                <ol>
+
+                    <li>Unit Testing: For testing paths within a unit
+                    <li>Integration Testing: For testing paths between units
+                    <li>System Testing: For testing paths between subsystems
+
+                </ol>
+                <p>However, it is mainly applied to Unit Testing.</p>
+            </article>
+
+            <h3>White Box Advantages</h3>
+            <article>
+                <ol>
+
+                    <li>Testing can be commenced at an earlier stage. One need not wait for the GUI to be available.
+                    <li>Testing is more thorough, with the possibility of covering most paths.
+
+                </ol>
+            </article>
+
+            <h3>
+                White Box Disadvantages
+            </h3>
+            <article>
+                <ol>
+
+                    <li>Since tests can be very complex, highly skilled resources are required, with thorough knowledge of programming and implementation.
+                    <li>Test script maintenance can be a burden if the implementation changes too frequently.
+                    <li>Since this method of testing it closely tied with the application being testing, tools to cater to every kind of implementation/platform may not be readily available.
+                    <li>White Box Testing is like the work of a mechanic who examines the engine to see why the car is not moving.
+
+                </ol>
+            </article>
+
+            <h3>Definition by ISTQB</h3>
+            <article>
+                <ol>
+
+                    <li><b>white-box testing</b>: Testing based on an analysis of the internal structure of the component or
+                    system.
+                    <li><b>white-box test design technique</b>: Procedure to derive and/or select test cases based on an
+                    analysis of the internal structure of a component or system.
+
+                </ol>
+            </article>
+        </section>
+    </div>
+</div>
+</body>
+</html>
